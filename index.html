@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Event Management</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="events-list-app">
+      <h1>Event Management App</h1>
+      <button class="btn-add-new-event">Add New Event</button>
+      <div class="events-list">
+        <table>
+          <thead>
+            <tr>
+              <th>Event</th>
+              <th>Start</th>
+              <th>End</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Dynamically generated rows go here -->
+            <!-- Example row:
+              <tr class="event-row" id="event-123">
+                <td>Sample Event</td>
+                <td>2023-01-01</td>
+                <td>2023-01-02</td>
+                <td>
+                  <button class="btn-edit" data-id="123">Edit</button>
+                  <button class="btn-delete" data-id="123">Delete</button>
+                </td>
+              </tr>
+            -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="./event-list-api.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
