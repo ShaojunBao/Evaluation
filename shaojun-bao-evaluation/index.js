@@ -136,12 +136,14 @@ class EventsController {
         this.setupDeleteEvent();
         this.setupCancelEditEvent();
     }
+
     setupAddEvent() {
         this.view.newEventButton.addEventListener("click", async (e) => {
             e.preventDefault();
             this.view.addNewToDo();
         });
     }
+
     setupCancelEvent() {
         this.view.eventsList.addEventListener("click", (e) => {
             if (e.target.classList.contains("btn-cancel")) {
@@ -151,6 +153,7 @@ class EventsController {
             }
         });
     }
+
     setupSaveEvent() {
         this.view.eventsList.addEventListener("click", async (e) => {
             if (e.target.classList.contains("btn-save-event")) {
@@ -175,6 +178,7 @@ class EventsController {
             }
         });
     }
+
     setupEditEvent() {
         this.view.eventsList.addEventListener("click", (e) => {
             if (e.target.classList.contains("btn-edit")) {
@@ -183,6 +187,7 @@ class EventsController {
             }
         });
     }
+    
     setupUpdateEvent() {
         this.view.eventsList.addEventListener("click", async (e) => {
             if (e.target.classList.contains("btn-update-event")) {
@@ -207,6 +212,7 @@ class EventsController {
             }
         });
     }
+
     setupDeleteEvent() {
         this.view.eventsList.addEventListener("click", async (e) => {
           if (e.target.classList.contains("btn-delete")) {
@@ -218,6 +224,7 @@ class EventsController {
           }
         });
       }
+
       setupCancelEditEvent() {
         this.view.eventsList.addEventListener("click", (e) => {
           if (e.target.classList.contains("btn-cancel-edit")) {
@@ -229,9 +236,6 @@ class EventsController {
           }
         });
       }
-      
-      
-
 }
 const eventsModel = new EventsModel();
 const eventsView = new EventsView();
