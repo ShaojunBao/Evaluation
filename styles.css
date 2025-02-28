@@ -108,4 +108,16 @@
   .event-row + .event-row {
     border-top: 1px solid #eee;
   }
+
+  .btn-update-event, .btn-save-event {
+    background-color: #28a745; 
+    color: white;
+    font-weight: bold;
+}
+
+.btn-cancel-edit, .btn-cancel {
+    background-color: #dc3545; 
+    color: white;
+    font-weight: bold;
+}
   
